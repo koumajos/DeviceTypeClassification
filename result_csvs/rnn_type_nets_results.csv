@@ -21,6 +21,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.7754,1024,0.5,256,0.001,1,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",LSTM
 0.7404,1024,0.5,512,0.0001,1,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.753,256,0.5,1024,0.0001,3,adam,log,"n_flows,n_packets,n_bytes",GRU
+0.4122,1024,0.0,1024,0.001,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7558,1024,0.0,128,0.01,3,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",LSTM
 0.3122,1024,0.0,512,0.01,2,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.6488,256,0.2,1024,0.01,2,adam,log,"n_flows,n_packets,n_bytes",GRU
@@ -35,6 +36,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.3134,1024,0.0,1024,0.001,3,adam,z_score,"n_flows,n_packets,n_bytes",RNN
 0.7901,256,0.5,128,0.001,2,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",LSTM
 0.6944,256,0.0,1024,0.0001,3,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
+0.7083,512,0.0,1024,0.0001,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7352,256,0.2,256,0.01,1,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.7114,512,0.5,512,0.0001,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.7071,256,0.5,64,0.0001,1,adam,log,"n_flows,n_packets,n_bytes",RNN
@@ -424,6 +426,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.4566,512,0.0,1024,0.001,2,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.7794,256,0.2,256,0.001,2,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.7703,512,0.0,64,0.001,1,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
+0.709,512,0.5,1024,0.0001,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.8138,256,0.5,64,0.001,2,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.3122,1024,0.5,1024,0.01,1,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7499,512,0.5,512,0.0001,2,adam,log,"n_flows,n_packets,n_bytes",GRU
@@ -498,6 +501,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.5755,256,0.0,1024,0.01,2,adam,z_score,"n_flows,n_packets,n_bytes",LSTM
 0.3122,256,0.2,256,0.01,3,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.7413,256,0.0,128,0.0001,2,adam,log,"n_flows,n_packets,n_bytes",GRU
+0.3304,512,0.0,1024,0.001,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.782,512,0.0,128,0.0001,2,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.7526,256,0.0,128,0.001,3,adam,log,"n_flows,n_packets,n_bytes",LSTM
 0.7448,256,0.5,1024,0.0001,1,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
@@ -539,6 +543,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.437,512,0.5,256,0.01,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.3169,256,0.5,64,0.01,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.6434,512,0.5,256,0.0001,3,adam,z_score,"n_flows,n_packets,n_bytes",RNN
+0.3122,1024,0.0,1024,0.01,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.8234,1024,0.5,512,0.001,2,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.7539,512,0.5,256,0.0001,1,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.8005,256,0.0,128,0.0001,1,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
@@ -845,6 +850,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.7151,256,0.2,512,0.01,1,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.621,256,0.5,128,0.0001,1,adam,z_score,"n_flows,n_packets,n_bytes",GRU
 0.7593,512,0.5,256,0.0001,1,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
+0.3128,512,0.0,1024,0.01,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.6294,512,0.2,256,0.001,1,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.7596,1024,0.0,512,0.0001,2,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.7706,512,0.2,64,0.0001,2,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
@@ -880,6 +886,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.6377,256,0.2,128,0.01,1,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.3122,256,0.5,1024,0.01,2,adam,z_score,"n_flows,n_packets,n_bytes",RNN
 0.4739,512,0.2,256,0.001,2,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
+0.3122,512,0.2,1024,0.01,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.6074,256,0.5,1024,0.01,1,adam,z_score,"n_flows,n_packets,n_bytes",GRU
 0.3122,256,0.5,512,0.001,2,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.7504,256,0.5,256,0.0001,2,adam,log,"n_flows,n_packets,n_bytes",GRU
@@ -920,6 +927,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.6663,1024,0.5,256,0.01,2,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.7837,256,0.5,1024,0.001,2,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",LSTM
 0.6961,256,0.5,256,0.01,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
+0.4579,256,0.0,1024,0.0001,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.5332,256,0.5,256,0.01,3,adam,z_score,"n_flows,n_packets,n_bytes",GRU
 0.6445,512,0.2,1024,0.01,1,adam,log,"n_flows,n_packets,n_bytes",LSTM
 0.7639,1024,0.2,1024,0.0001,1,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
@@ -957,6 +965,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.3133,256,0.5,1024,0.001,1,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.7657,1024,0.0,64,0.001,1,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.3122,512,0.2,512,0.01,1,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
+0.3122,512,0.5,1024,0.01,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7564,512,0.0,256,0.001,2,adam,log,"n_flows,n_packets,n_bytes",LSTM
 0.7381,256,0.5,64,0.01,1,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.6384,256,0.5,512,0.0001,1,adam,z_score,"n_flows,n_packets,n_bytes",GRU
@@ -1003,6 +1012,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.7713,512,0.2,128,0.0001,1,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.8174,512,0.0,64,0.001,2,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.3122,256,0.2,64,0.01,3,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
+0.3125,512,0.2,1024,0.001,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.8153,1024,0.5,256,0.0001,2,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.752,256,0.0,64,0.0001,2,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.4004,1024,0.0,256,0.01,1,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
@@ -1273,6 +1283,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.6943,1024,0.5,128,0.001,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.3122,512,0.5,1024,0.01,2,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.6504,1024,0.5,512,0.01,3,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
+0.3261,1024,0.2,1024,0.001,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7375,256,0.5,512,0.01,1,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.7769,1024,0.0,64,0.01,1,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.3122,256,0.5,64,0.01,3,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
@@ -1452,10 +1463,12 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.3122,512,0.5,1024,0.001,3,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.6988,512,0.5,128,0.001,1,adam,log,"n_flows,n_packets,n_bytes",RNN
 0.7625,512,0.2,64,0.0001,1,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
+0.3122,256,0.0,1024,0.001,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.5938,1024,0.2,64,0.0001,2,adam,z_score,"n_flows,n_packets,n_bytes",RNN
 0.7429,1024,0.5,64,0.01,2,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.7088,1024,0.2,64,0.001,2,adam,log,"n_flows,n_packets,n_bytes",RNN
 0.7781,1024,0.0,128,0.0001,3,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
+0.5527,1024,0.0,1024,0.001,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.6851,512,0.2,128,0.0001,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.316,256,0.0,64,0.01,3,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.7305,256,0.2,128,0.001,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",LSTM
@@ -1494,6 +1507,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.5581,256,0.0,1024,0.001,3,adam,z_score,"n_flows,n_packets,n_bytes",LSTM
 0.7942,256,0.5,512,0.0001,3,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.7163,512,0.2,64,0.0001,1,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
+0.6986,1024,0.0,1024,0.0001,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.3122,1024,0.5,1024,0.01,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.4264,512,0.2,512,0.001,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7488,1024,0.0,128,0.01,3,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
@@ -1602,6 +1616,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.6278,256,0.0,512,0.01,3,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",LSTM
 0.7724,1024,0.5,64,0.0001,3,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.77,512,0.0,128,0.0001,2,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",GRU
+0.7155,512,0.0,1024,0.0001,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.6718,1024,0.2,512,0.0001,3,adam,z_score,"n_flows,n_packets,n_bytes",GRU
 0.7794,1024,0.5,256,0.0001,3,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.7373,256,0.5,128,0.001,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
@@ -1814,6 +1829,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.3122,256,0.0,1024,0.01,1,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.5917,1024,0.5,256,0.01,2,adam,z_score,"n_flows,n_packets,n_bytes",GRU
 0.654,256,0.5,1024,0.0001,2,adam,z_score,"n_flows,n_packets,n_bytes",GRU
+0.3122,512,0.2,1024,0.01,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.8031,1024,0.5,128,0.001,3,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.3131,256,0.2,1024,0.01,1,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.6627,512,0.5,512,0.001,1,adam,z_score,"n_flows,n_packets,n_bytes",LSTM
@@ -1911,6 +1927,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.7587,512,0.2,64,0.0001,1,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.7393,512,0.5,128,0.0001,1,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7631,1024,0.2,512,0.001,2,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",GRU
+0.7042,256,0.5,1024,0.0001,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7782,256,0.2,128,0.0001,1,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.3122,512,0.0,256,0.01,3,adam,log,"n_flows,n_packets,n_bytes",RNN
 0.7058,1024,0.2,256,0.0001,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
@@ -1945,6 +1962,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.7757,1024,0.0,512,0.001,3,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.3122,1024,0.2,128,0.01,2,adam,log,"n_flows,n_packets,n_bytes",RNN
 0.7017,512,0.2,128,0.01,3,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
+0.781,1024,0.0,512,0.001,3,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",LSTM
 0.7579,256,0.5,64,0.0001,3,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.3122,1024,0.0,1024,0.01,3,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.7747,256,0.0,1024,0.0001,3,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
@@ -1966,6 +1984,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.7019,256,0.5,128,0.01,2,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.8068,512,0.2,128,0.0001,2,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.3122,256,0.0,64,0.01,2,adam,log,"n_flows,n_packets,n_bytes",RNN
+0.3122,256,0.0,1024,0.01,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7779,512,0.2,512,0.0001,1,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.6868,256,0.2,64,0.01,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",LSTM
 0.7703,256,0.5,256,0.0001,1,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
@@ -1973,6 +1992,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.3122,256,0.0,256,0.01,3,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.6631,512,0.2,1024,0.001,3,adam,z_score,"n_flows,n_packets,n_bytes",GRU
 0.687,1024,0.5,1024,0.01,1,adam,log,"n_flows,n_packets,n_bytes",GRU
+0.4635,256,0.5,1024,0.001,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7031,512,0.2,512,0.0001,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.8081,512,0.0,256,0.0001,1,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.7828,512,0.0,256,0.0001,1,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
@@ -2094,6 +2114,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.6034,256,0.2,512,0.0001,1,adam,z_score,"n_flows,n_packets,n_bytes",RNN
 0.6924,1024,0.2,128,0.001,1,adam,z_score,"n_flows,n_packets,n_bytes",GRU
 0.7596,512,0.2,256,0.001,1,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
+0.3169,512,0.2,1024,0.001,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7473,256,0.2,512,0.0001,1,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.7537,512,0.5,256,0.001,3,adam,log,"n_flows,n_packets,n_bytes",GRU
 0.7014,256,0.2,512,0.01,2,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",GRU
@@ -2265,6 +2286,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.7549,256,0.2,256,0.01,2,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.7834,512,0.5,1024,0.001,1,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.3122,1024,0.0,512,0.01,1,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
+0.5708,1024,0.2,1024,0.001,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7807,512,0.5,512,0.0001,1,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.7596,1024,0.2,256,0.01,1,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.6338,256,0.2,128,0.0001,1,adam,z_score,"n_flows,n_packets,n_bytes",GRU
@@ -2571,6 +2593,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.475,1024,0.5,64,0.01,1,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7878,512,0.5,512,0.0001,3,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.6875,256,0.2,1024,0.01,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
+0.3122,256,0.0,1024,0.001,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.4672,1024,0.0,64,0.001,3,adam,z_score,"n_flows,n_packets,n_bytes",RNN
 0.3122,1024,0.5,128,0.01,3,adam,z_score,"n_flows,n_packets,n_bytes",LSTM
 0.7662,1024,0.5,64,0.001,1,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
@@ -2588,6 +2611,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.7025,512,0.2,64,0.0001,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.6988,256,0.0,256,0.0001,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7697,1024,0.2,128,0.0001,3,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",GRU
+0.7792,1024,0.5,512,0.001,2,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",LSTM
 0.6817,256,0.5,256,0.01,3,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.8237,256,0.5,512,0.0001,3,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.3122,512,0.5,64,0.01,3,adam,z_score,"n_flows,n_packets,n_bytes",RNN
@@ -2635,6 +2659,9 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.689,256,0.0,128,0.0001,2,adam,z_score,"n_flows,n_packets,n_bytes",GRU
 0.3122,512,0.0,256,0.01,2,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.7637,256,0.2,256,0.001,2,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
+0.6971,512,0.5,1024,0.0001,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
+0.3131,1024,0.5,1024,0.001,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
+0.7036,512,0.5,1024,0.0001,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.3122,512,0.5,512,0.01,3,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.7651,512,0.5,128,0.001,2,adam,log,"n_flows,n_packets,n_bytes",LSTM
 0.7356,256,0.5,64,0.0001,2,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
@@ -2673,6 +2700,8 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.8159,256,0.5,1024,0.0001,2,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.3122,256,0.2,512,0.01,1,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.6683,256,0.2,128,0.01,2,adam,log,"n_flows,n_packets,n_bytes",LSTM
+0.3198,1024,0.5,1024,0.001,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
+0.7233,512,0.2,1024,0.0001,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.3156,1024,0.5,1024,0.01,3,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.3145,512,0.0,512,0.001,3,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.7866,1024,0.0,128,0.0001,3,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
@@ -2750,6 +2779,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.7081,256,0.2,512,0.0001,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.4632,512,0.5,256,0.001,3,adam,log,"n_flows,n_packets,n_bytes",RNN
 0.6697,1024,0.0,512,0.01,3,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
+0.3146,512,0.0,1024,0.001,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7496,512,0.0,128,0.01,2,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.7431,1024,0.5,64,0.0001,3,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.7659,512,0.2,128,0.0001,2,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
@@ -2963,6 +2993,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.786,256,0.2,64,0.001,3,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.7606,512,0.2,1024,0.01,1,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.7504,512,0.0,1024,0.01,1,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",LSTM
+0.703,1024,0.5,1024,0.0001,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.779,512,0.2,1024,0.001,1,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.7323,512,0.5,64,0.01,2,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.3133,1024,0.2,512,0.01,2,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
@@ -3126,6 +3157,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.7751,512,0.2,512,0.001,1,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.7094,1024,0.2,256,0.0001,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",LSTM
 0.7468,256,0.2,64,0.01,1,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
+0.7083,256,0.5,1024,0.0001,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.7008,256,0.0,128,0.001,2,adam,z_score,"n_flows,n_packets,n_bytes",LSTM
 0.6855,512,0.0,128,0.0001,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7537,1024,0.2,64,0.01,3,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
@@ -3367,6 +3399,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.3122,256,0.0,128,0.01,2,adam,z_score,"n_flows,n_packets,n_bytes",RNN
 0.7389,256,0.5,64,0.01,2,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.7948,1024,0.5,256,0.0001,3,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
+0.7084,256,0.5,1024,0.0001,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.7326,1024,0.0,64,0.01,1,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.3122,256,0.0,1024,0.001,3,adam,log,"n_flows,n_packets,n_bytes",RNN
 0.7365,1024,0.2,128,0.001,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
@@ -3402,6 +3435,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.7271,1024,0.0,64,0.001,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.7443,1024,0.0,64,0.01,1,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.6063,512,0.2,128,0.0001,1,adam,z_score,"n_flows,n_packets,n_bytes",GRU
+0.3122,256,0.5,1024,0.001,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7673,512,0.0,1024,0.001,3,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.745,512,0.0,512,0.0001,1,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.7753,256,0.5,64,0.0001,2,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
@@ -3484,6 +3518,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.3122,512,0.5,512,0.01,3,adam,z_score,"n_flows,n_packets,n_bytes",LSTM
 0.7583,1024,0.5,256,0.001,1,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.6448,512,0.5,128,0.001,2,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
+0.7077,256,0.0,1024,0.0001,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7583,256,0.0,512,0.0001,2,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.7143,1024,0.2,64,0.001,3,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.3149,256,0.0,1024,0.001,2,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
@@ -3494,6 +3529,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.6709,256,0.0,128,0.001,1,adam,z_score,"n_flows,n_packets,n_bytes",LSTM
 0.3122,512,0.2,64,0.01,3,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.3122,1024,0.0,128,0.01,2,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
+0.3329,512,0.2,1024,0.001,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7727,512,0.0,1024,0.001,1,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.3122,512,0.2,1024,0.001,1,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.808,256,0.2,1024,0.0001,1,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
@@ -3732,6 +3768,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.7574,512,0.2,128,0.0001,1,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.6921,1024,0.0,512,0.01,2,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.412,512,0.0,128,0.01,1,adam,log,"n_flows,n_packets,n_bytes",RNN
+0.3129,512,0.5,1024,0.001,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7222,512,0.0,64,0.001,2,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.759,256,0.2,1024,0.001,2,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.6302,256,0.0,64,0.01,2,adam,z_score,"n_flows,n_packets,n_bytes",GRU
@@ -3804,6 +3841,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.78,512,0.5,64,0.001,3,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.7144,512,0.5,128,0.01,3,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",LSTM
 0.6856,256,0.2,64,0.01,3,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
+0.7067,512,0.5,1024,0.0001,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7708,1024,0.0,128,0.001,1,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.6416,1024,0.0,256,0.01,1,adam,z_score,"n_flows,n_packets,n_bytes",GRU
 0.3174,256,0.2,512,0.001,3,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
@@ -3856,6 +3894,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.8188,512,0.2,256,0.0001,3,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.7209,1024,0.5,64,0.001,1,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.395,1024,0.0,1024,0.001,2,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
+0.7,1024,0.5,1024,0.0001,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7242,512,0.2,512,0.01,1,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.3122,1024,0.2,256,0.01,3,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.683,512,0.0,1024,0.01,1,adam,log,"n_flows,n_packets,n_bytes",LSTM
@@ -3869,6 +3908,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.7187,1024,0.0,512,0.0001,1,adam,log,"n_flows,n_packets,n_bytes",RNN
 0.7536,256,0.2,1024,0.0001,1,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.7288,512,0.2,256,0.01,1,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",GRU
+0.7278,256,0.0,1024,0.0001,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.7903,1024,0.0,256,0.001,2,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.7308,512,0.0,256,0.01,2,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",LSTM
 0.7141,1024,0.2,256,0.01,2,adam,log,"n_flows,n_packets,n_bytes",LSTM
@@ -3890,6 +3930,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.6926,512,0.0,1024,0.001,3,adam,z_score,"n_flows,n_packets,n_bytes",GRU
 0.7247,512,0.2,64,0.01,1,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",LSTM
 0.8108,256,0.5,512,0.0001,1,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
+0.3122,256,0.2,1024,0.01,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7806,256,0.0,256,0.001,1,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",LSTM
 0.5028,512,0.0,1024,0.01,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.8172,256,0.0,1024,0.0001,2,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
@@ -3922,6 +3963,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.3125,1024,0.5,256,0.01,3,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.8311,512,0.5,128,0.001,2,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.7015,1024,0.0,128,0.001,3,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
+0.6988,512,0.0,1024,0.0001,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.728,1024,0.5,64,0.001,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.7435,512,0.0,512,0.01,1,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.7699,512,0.0,512,0.0001,1,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",GRU
@@ -3929,6 +3971,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.7566,256,0.5,512,0.0001,3,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.7345,512,0.0,128,0.01,1,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",LSTM
 0.7457,1024,0.5,512,0.0001,1,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
+0.709,1024,0.2,1024,0.0001,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.6262,1024,0.5,256,0.001,1,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.7612,256,0.0,256,0.0001,3,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7856,1024,0.2,256,0.001,3,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
@@ -4146,6 +4189,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.7414,256,0.0,1024,0.01,1,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.313,512,0.5,256,0.01,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7309,256,0.0,128,0.001,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
+0.707,256,0.2,1024,0.0001,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7316,512,0.2,512,0.0001,1,adam,log,"n_flows,n_packets,n_bytes",LSTM
 0.7076,256,0.0,512,0.01,1,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",LSTM
 0.4054,1024,0.5,64,0.01,3,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
@@ -4220,6 +4264,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.754,1024,0.0,128,0.0001,1,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.7281,1024,0.0,256,0.01,2,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.8353,512,0.5,256,0.001,3,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
+0.3124,1024,0.2,1024,0.01,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.8204,256,0.5,128,0.0001,2,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.7624,512,0.5,256,0.01,1,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.7497,256,0.5,128,0.001,1,adam,log,"n_flows,n_packets,n_bytes",GRU
@@ -4411,6 +4456,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.6847,1024,0.2,128,0.001,1,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.6129,256,0.2,64,0.01,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.6698,256,0.2,64,0.01,3,adam,log,"n_flows,n_packets,n_bytes",GRU
+0.3128,512,0.0,1024,0.01,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7855,256,0.2,256,0.0001,2,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.3122,512,0.5,256,0.01,3,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.3274,1024,0.0,512,0.001,3,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
@@ -4457,6 +4503,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.3122,256,0.5,256,0.01,2,adam,z_score,"n_flows,n_packets,n_bytes",RNN
 0.7313,256,0.2,64,0.01,3,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.6678,256,0.5,128,0.0001,2,adam,z_score,"n_flows,n_packets,n_bytes",GRU
+0.5667,256,0.5,1024,0.0001,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7361,256,0.2,256,0.0001,2,adam,log,"n_flows,n_packets,n_bytes",RNN
 0.6187,256,0.5,64,0.0001,1,adam,z_score,"n_flows,n_packets,n_bytes",GRU
 0.7712,256,0.2,512,0.0001,3,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
@@ -4684,6 +4731,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.5487,1024,0.5,128,0.01,3,adam,z_score,"n_flows,n_packets,n_bytes",GRU
 0.788,1024,0.2,256,0.0001,2,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.7372,512,0.5,256,0.0001,1,adam,log,"n_flows,n_packets,n_bytes",GRU
+0.3122,256,0.5,1024,0.001,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7711,512,0.0,128,0.0001,3,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.4739,1024,0.5,128,0.01,1,adam,log,"n_flows,n_packets,n_bytes",RNN
 0.761,512,0.5,64,0.0001,3,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",LSTM
@@ -4743,6 +4791,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.6276,512,0.2,512,0.0001,1,adam,z_score,"n_flows,n_packets,n_bytes",LSTM
 0.7764,256,0.2,256,0.0001,3,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.7841,512,0.2,128,0.001,2,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",LSTM
+0.6969,1024,0.2,1024,0.0001,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7491,1024,0.2,64,0.01,1,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.6975,1024,0.5,64,0.0001,1,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.7671,256,0.2,256,0.0001,1,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
@@ -4758,6 +4807,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.7699,512,0.2,1024,0.0001,3,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.3931,512,0.5,256,0.001,3,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.7318,1024,0.2,256,0.0001,2,adam,log,"n_flows,n_packets,n_bytes",LSTM
+0.7022,256,0.0,1024,0.0001,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.6691,256,0.5,128,0.01,1,adam,log,"n_flows,n_packets,n_bytes",LSTM
 0.5663,256,0.5,512,0.01,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",LSTM
 0.7242,1024,0.5,64,0.0001,3,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
@@ -4878,6 +4928,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.7676,512,0.0,1024,0.001,3,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.7499,256,0.5,512,0.0001,3,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.748,256,0.5,256,0.0001,2,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
+0.3125,256,0.2,1024,0.01,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.3122,256,0.5,128,0.01,1,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.8032,256,0.2,512,0.001,1,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.3125,256,0.5,512,0.001,2,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
@@ -5196,6 +5247,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.6412,512,0.2,256,0.01,3,adam,log,"n_flows,n_packets,n_bytes",GRU
 0.6781,512,0.5,64,0.01,2,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.3125,256,0.5,128,0.01,3,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
+0.7144,512,0.2,1024,0.0001,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.7724,1024,0.5,256,0.0001,3,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",LSTM
 0.4069,1024,0.0,256,0.01,2,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.7329,512,0.2,256,0.0001,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
@@ -5324,6 +5376,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.7118,512,0.0,1024,0.0001,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.6909,512,0.0,128,0.001,1,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.6183,512,0.0,256,0.001,1,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
+0.7215,1024,0.5,64,0.01,3,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.483,256,0.0,64,0.01,1,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.7584,1024,0.0,1024,0.001,2,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.3122,1024,0.5,64,0.01,2,adam,log,"n_flows,n_packets,n_bytes",RNN
@@ -5396,6 +5449,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.8016,512,0.5,512,0.0001,2,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.8187,256,0.0,64,0.001,3,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.7657,1024,0.2,1024,0.0001,1,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
+0.7096,1024,0.0,1024,0.0001,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.7053,512,0.0,1024,0.0001,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",LSTM
 0.7795,512,0.0,512,0.001,1,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.7039,256,0.5,1024,0.001,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",LSTM
@@ -5472,6 +5526,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.7608,256,0.2,64,0.001,1,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.3122,256,0.0,256,0.01,2,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.7785,256,0.2,128,0.001,2,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",GRU
+0.3138,256,0.5,1024,0.01,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7041,512,0.0,512,0.0001,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.744,512,0.2,64,0.001,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",LSTM
 0.7735,512,0.2,128,0.0001,3,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
@@ -5523,6 +5578,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.6869,1024,0.0,64,0.001,2,adam,z_score,"n_flows,n_packets,n_bytes",LSTM
 0.7811,1024,0.2,512,0.0001,2,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.7566,512,0.5,128,0.0001,1,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
+0.3122,256,0.2,1024,0.001,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7014,256,0.0,256,0.01,1,adam,log,"n_flows,n_packets,n_bytes",GRU
 0.6604,512,0.0,256,0.001,1,adam,z_score,"n_flows,n_packets,n_bytes",LSTM
 0.7921,256,0.5,256,0.001,2,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
@@ -5532,6 +5588,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.762,512,0.5,512,0.001,2,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.7709,1024,0.5,256,0.001,3,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.7791,512,0.2,256,0.0001,1,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
+0.3122,1024,0.5,1024,0.01,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7645,1024,0.0,128,0.01,1,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.7788,1024,0.5,64,0.001,1,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.7064,512,0.5,128,0.001,2,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
@@ -5649,6 +5706,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.3413,512,0.5,128,0.01,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7555,1024,0.0,64,0.01,2,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.3122,512,0.5,64,0.01,3,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
+0.7043,512,0.2,1024,0.0001,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7362,256,0.0,64,0.0001,2,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.7729,256,0.5,256,0.001,1,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.7205,512,0.2,64,0.01,2,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
@@ -5724,6 +5782,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.628,1024,0.2,512,0.01,1,adam,z_score,"n_flows,n_packets,n_bytes",GRU
 0.7014,256,0.5,128,0.0001,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.6928,512,0.5,256,0.01,2,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
+0.3127,256,0.0,1024,0.01,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.6875,1024,0.2,512,0.01,1,adam,log,"n_flows,n_packets,n_bytes",LSTM
 0.6758,256,0.2,256,0.01,3,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.4297,1024,0.0,256,0.001,3,adam,log,"n_flows,n_packets,n_bytes",RNN
@@ -5927,6 +5986,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.6304,1024,0.2,512,0.01,3,adam,log,"n_flows,n_packets,n_bytes",GRU
 0.5926,256,0.5,1024,0.01,3,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.7152,1024,0.0,1024,0.01,1,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",GRU
+0.3125,1024,0.2,1024,0.01,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7885,256,0.0,256,0.0001,2,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.7775,512,0.5,256,0.0001,2,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.7658,1024,0.2,64,0.0001,2,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
@@ -5958,6 +6018,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.6648,1024,0.2,128,0.01,1,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.7733,512,0.5,64,0.001,2,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.6797,256,0.0,512,0.0001,3,adam,z_score,"n_flows,n_packets,n_bytes",GRU
+0.696,1024,0.0,1024,0.0001,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7386,1024,0.2,512,0.01,1,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.3183,256,0.0,256,0.001,3,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.4179,256,0.0,1024,0.01,3,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",GRU
@@ -6385,6 +6446,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.7294,256,0.0,1024,0.001,2,adam,log,"n_flows,n_packets,n_bytes",LSTM
 0.7616,1024,0.2,512,0.0001,1,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.7971,512,0.2,512,0.001,3,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
+0.3125,512,0.2,1024,0.01,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7408,1024,0.5,64,0.001,1,adam,log,"n_flows,n_packets,n_bytes",GRU
 0.7425,256,0.2,1024,0.001,3,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.7617,512,0.0,64,0.0001,3,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
@@ -6417,6 +6479,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.7396,512,0.0,512,0.001,1,adam,log,"n_flows,n_packets,n_bytes",LSTM
 0.5965,1024,0.2,256,0.0001,1,adam,z_score,"n_flows,n_packets,n_bytes",GRU
 0.7388,256,0.2,128,0.0001,2,adam,log,"n_flows,n_packets,n_bytes",LSTM
+0.4191,512,0.5,1024,0.001,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.5944,512,0.2,64,0.0001,1,adam,z_score,"n_flows,n_packets,n_bytes",RNN
 0.7766,512,0.2,1024,0.0001,3,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.716,512,0.0,256,0.01,1,adam,log,"n_flows,n_packets,n_bytes",GRU
@@ -6469,6 +6532,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.8145,1024,0.2,256,0.0001,3,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.3122,256,0.2,1024,0.01,3,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.7152,256,0.0,512,0.01,2,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
+0.6995,512,0.2,1024,0.0001,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.5825,256,0.2,64,0.01,1,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.7818,256,0.5,256,0.001,2,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.6486,1024,0.2,64,0.01,1,adam,z_score,"n_flows,n_packets,n_bytes",GRU
@@ -6630,6 +6694,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.7073,512,0.5,128,0.01,1,adam,log,"n_flows,n_packets,n_bytes",GRU
 0.7603,1024,0.2,256,0.0001,1,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.775,256,0.0,128,0.0001,1,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
+0.3122,1024,0.0,1024,0.001,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7605,512,0.2,128,0.001,1,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.3122,1024,0.5,512,0.001,3,adam,z_score,"n_flows,n_packets,n_bytes",LSTM
 0.7339,1024,0.5,64,0.001,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",LSTM
@@ -6658,6 +6723,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.7967,1024,0.2,512,0.001,3,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.3183,512,0.2,512,0.001,3,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.7987,256,0.5,128,0.0001,1,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
+0.3125,1024,0.2,1024,0.01,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7522,256,0.5,128,0.0001,3,adam,log,"n_flows,n_packets,n_bytes",LSTM
 0.7785,1024,0.5,128,0.001,1,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.3126,256,0.5,256,0.001,3,adam,log,"n_flows,n_packets,n_bytes",RNN
@@ -6755,6 +6821,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.8087,1024,0.5,128,0.0001,3,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.7334,1024,0.2,128,0.0001,2,adam,log,"n_flows,n_packets,n_bytes",GRU
 0.6072,256,0.2,256,0.01,2,adam,z_score,"n_flows,n_packets,n_bytes",GRU
+0.3125,256,0.2,1024,0.001,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7118,512,0.5,512,0.0001,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.7512,512,0.5,256,0.0001,2,adam,log,"n_flows,n_packets,n_bytes",GRU
 0.7736,256,0.0,1024,0.001,3,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
@@ -6867,6 +6934,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.3122,512,0.0,1024,0.001,3,adam,z_score,"n_flows,n_packets,n_bytes",LSTM
 0.7606,512,0.5,128,0.0001,3,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.7267,256,0.5,512,0.001,3,adam,log,"n_flows,n_packets,n_bytes",GRU
+0.6536,1024,0.5,512,0.001,1,adam,z_score,"n_flows,n_packets,n_bytes",GRU
 0.6161,1024,0.0,64,0.01,1,adam,z_score,"n_flows,n_packets,n_bytes",GRU
 0.4358,512,0.0,512,0.001,3,adam,log,"n_flows,n_packets,n_bytes",RNN
 0.632,256,0.0,128,0.0001,1,adam,z_score,"n_flows,n_packets,n_bytes",GRU
@@ -6931,6 +6999,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.71,1024,0.0,512,0.0001,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.7203,1024,0.5,512,0.001,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",LSTM
 0.3122,1024,0.2,512,0.01,2,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
+0.7051,512,0.2,1024,0.0001,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7405,256,0.0,1024,0.0001,3,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.7755,256,0.5,128,0.0001,2,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.632,512,0.5,128,0.001,3,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
@@ -7083,6 +7152,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.7521,256,0.5,64,0.0001,2,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.3122,512,0.0,256,0.01,3,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.6407,256,0.5,512,0.01,2,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
+0.3122,1024,0.5,1024,0.001,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.4711,512,0.2,256,0.001,2,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.6728,256,0.5,512,0.0001,3,adam,z_score,"n_flows,n_packets,n_bytes",LSTM
 0.7675,512,0.0,64,0.001,3,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
@@ -7153,6 +7223,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.7814,256,0.0,64,0.001,3,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",LSTM
 0.6299,256,0.0,256,0.001,1,adam,log,"n_flows,n_packets,n_bytes",RNN
 0.677,512,0.2,128,0.01,3,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",GRU
+0.7033,1024,0.2,1024,0.0001,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.3122,256,0.0,512,0.01,2,adam,z_score,"n_flows,n_packets,n_bytes",RNN
 0.8166,512,0.2,1024,0.0001,2,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.3189,512,0.5,1024,0.001,3,adam,z_score,"n_flows,n_packets,n_bytes",RNN
@@ -7179,6 +7250,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.7636,512,0.0,256,0.001,3,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.3122,256,0.2,1024,0.01,3,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.4179,256,0.5,1024,0.01,3,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",GRU
+0.3921,1024,0.0,1024,0.01,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7897,512,0.0,128,0.001,3,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.6818,256,0.0,1024,0.0001,2,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7768,1024,0.0,1024,0.001,1,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
@@ -7289,6 +7361,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.3122,256,0.0,256,0.01,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",LSTM
 0.6869,512,0.0,64,0.0001,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7077,256,0.5,64,0.0001,2,adam,log,"n_flows,n_packets,n_bytes",RNN
+0.7059,1024,0.2,1024,0.0001,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.4178,512,0.0,512,0.01,3,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.7691,512,0.5,64,0.001,3,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.6543,1024,0.2,128,0.001,3,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
@@ -7305,6 +7378,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.7703,512,0.0,256,0.001,2,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.7246,512,0.0,64,0.0001,1,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.3122,512,0.0,128,0.01,1,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
+0.3127,256,0.2,1024,0.001,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.8009,1024,0.2,256,0.0001,3,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.7179,256,0.2,1024,0.01,1,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.7001,512,0.2,64,0.001,3,adam,z_score,"n_flows,n_packets,n_bytes",LSTM
@@ -7349,6 +7423,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.789,512,0.0,1024,0.0001,2,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.7957,1024,0.0,1024,0.001,2,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.778,512,0.0,64,0.001,1,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
+0.7062,256,0.2,1024,0.0001,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7623,512,0.2,1024,0.001,1,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.6141,512,0.5,512,0.0001,1,adam,z_score,"n_flows,n_packets,n_bytes",RNN
 0.7299,512,0.5,64,0.01,1,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",LSTM
@@ -7369,6 +7444,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.7557,512,0.0,1024,0.001,3,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",LSTM
 0.7218,256,0.0,128,0.01,2,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.6307,512,0.0,512,0.01,3,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",GRU
+0.7081,256,0.2,1024,0.0001,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.6561,256,0.5,256,0.0001,2,adam,z_score,"n_flows,n_packets,n_bytes",LSTM
 0.6901,256,0.5,128,0.0001,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.6633,512,0.2,512,0.0001,3,adam,z_score,"n_flows,n_packets,n_bytes",GRU
@@ -7457,6 +7533,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.6805,512,0.5,128,0.001,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7578,1024,0.5,128,0.001,1,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.7582,1024,0.0,64,0.001,3,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",GRU
+0.7169,512,0.5,1024,0.0001,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.3327,256,0.5,256,0.001,3,adam,z_score,"n_flows,n_packets,n_bytes",LSTM
 0.7494,512,0.2,512,0.01,1,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.7617,256,0.5,256,0.0001,3,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
@@ -7545,6 +7622,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.722,512,0.2,1024,0.01,1,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.7558,1024,0.5,512,0.01,1,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.7676,1024,0.5,512,0.001,1,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
+0.3131,256,0.0,1024,0.001,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7465,1024,0.2,128,0.0001,2,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.7241,1024,0.5,256,0.001,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.7271,512,0.5,1024,0.0001,2,adam,log,"n_flows,n_packets,n_bytes",RNN
@@ -7593,6 +7671,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.7682,512,0.5,1024,0.0001,2,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.7812,256,0.5,256,0.0001,3,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.7242,512,0.0,256,0.0001,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
+0.7054,1024,0.2,1024,0.0001,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.3122,1024,0.5,1024,0.01,1,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.6822,1024,0.2,128,0.001,3,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.3151,512,0.2,512,0.01,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
@@ -7626,6 +7705,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.765,512,0.0,512,0.001,3,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.7208,1024,0.0,512,0.001,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",LSTM
 0.5957,1024,0.2,64,0.0001,2,adam,z_score,"n_flows,n_packets,n_bytes",LSTM
+0.3125,512,0.0,1024,0.001,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7603,1024,0.5,256,0.0001,1,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.6256,256,0.5,512,0.01,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.7507,1024,0.2,1024,0.0001,2,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
@@ -7780,6 +7860,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.6789,512,0.0,64,0.001,3,adam,z_score,"n_flows,n_packets,n_bytes",LSTM
 0.592,1024,0.0,128,0.0001,1,adam,z_score,"n_flows,n_packets,n_bytes",LSTM
 0.7425,512,0.5,128,0.001,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
+0.7086,1024,0.5,1024,0.0001,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.7432,1024,0.2,256,0.01,1,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.7561,1024,0.2,64,0.01,3,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.7691,512,0.2,1024,0.0001,2,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",GRU
@@ -8042,6 +8123,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.7045,512,0.2,512,0.01,1,adam,log,"n_flows,n_packets,n_bytes",LSTM
 0.8083,256,0.2,1024,0.001,1,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.7959,512,0.0,1024,0.0001,3,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
+0.7137,1024,0.5,1024,0.0001,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.3122,256,0.2,512,0.001,2,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.8085,256,0.2,64,0.0001,3,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.3122,512,0.0,128,0.01,3,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
@@ -8122,6 +8204,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.6171,512,0.5,128,0.0001,1,adam,z_score,"n_flows,n_packets,n_bytes",GRU
 0.6679,512,0.2,512,0.001,3,adam,z_score,"n_flows,n_packets,n_bytes",LSTM
 0.7504,1024,0.2,512,0.0001,3,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
+0.3122,256,0.5,1024,0.01,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7667,256,0.5,256,0.001,2,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.3122,1024,0.5,1024,0.01,1,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.7204,256,0.2,1024,0.0001,1,adam,log,"n_flows,n_packets,n_bytes",RNN
@@ -8248,6 +8331,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.6626,512,0.0,1024,0.0001,2,adam,z_score,"n_flows,n_packets,n_bytes",LSTM
 0.7529,1024,0.2,256,0.001,2,adam,log,"n_flows,n_packets,n_bytes",LSTM
 0.5839,1024,0.0,64,0.001,1,adam,z_score,"n_flows,n_packets,n_bytes",RNN
+0.313,512,0.5,1024,0.001,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.3122,256,0.5,64,0.01,2,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.3122,256,0.2,1024,0.01,2,adam,log,"n_flows,n_packets,n_bytes",RNN
 0.7624,512,0.5,128,0.001,2,adam,log,"n_flows,n_packets,n_bytes",GRU
@@ -8299,6 +8383,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.8003,256,0.0,128,0.0001,1,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.7514,512,0.0,64,0.0001,2,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.7437,1024,0.2,64,0.001,2,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
+0.3122,512,0.5,1024,0.01,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.8106,1024,0.0,512,0.0001,3,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.6144,512,0.0,256,0.0001,1,adam,z_score,"n_flows,n_packets,n_bytes",LSTM
 0.3122,256,0.5,1024,0.01,1,adam,z_score,"n_flows,n_packets,n_bytes",RNN
@@ -8360,6 +8445,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.4769,512,0.2,64,0.01,1,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.3122,256,0.5,1024,0.001,3,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7029,256,0.0,64,0.0001,1,adam,log,"n_flows,n_packets,n_bytes",RNN
+0.7141,256,0.2,1024,0.0001,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.8085,1024,0.2,128,0.0001,3,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.7883,1024,0.5,1024,0.0001,2,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.7822,1024,0.2,512,0.001,2,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
@@ -8513,6 +8599,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.6938,1024,0.2,128,0.001,3,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.7128,256,0.2,64,0.0001,2,adam,log,"n_flows,n_packets,n_bytes",RNN
 0.7562,1024,0.2,128,0.001,2,adam,log,"n_flows,n_packets,n_bytes",LSTM
+0.7196,256,0.2,1024,0.0001,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.7716,512,0.5,64,0.0001,2,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.7321,512,0.0,64,0.0001,3,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.3122,256,0.2,1024,0.01,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
@@ -8607,6 +8694,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.7067,1024,0.5,64,0.001,3,adam,z_score,"n_flows,n_packets,n_bytes",LSTM
 0.3122,256,0.0,512,0.01,3,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7619,1024,0.5,64,0.001,3,adam,log,"n_flows,n_packets,n_bytes",LSTM
+0.4573,256,0.5,1024,0.01,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.6519,512,0.2,1024,0.01,3,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.5683,1024,0.0,1024,0.001,1,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.7946,256,0.5,64,0.0001,2,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
@@ -8728,6 +8816,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.3122,256,0.0,1024,0.01,3,adam,log,"n_flows,n_packets,n_bytes",GRU
 0.3122,512,0.2,1024,0.01,3,adam,log,"n_flows,n_packets,n_bytes",LSTM
 0.3259,1024,0.0,1024,0.001,2,adam,log,"n_flows,n_packets,n_bytes",RNN
+0.3122,512,0.5,1024,0.01,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7022,1024,0.2,256,0.01,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.7767,256,0.0,512,0.001,1,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",LSTM
 0.7786,512,0.2,1024,0.0001,1,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
@@ -8992,6 +9081,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.7499,512,0.0,256,0.01,1,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.3122,1024,0.0,1024,0.001,2,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.6925,256,0.2,64,0.001,3,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
+0.6968,1024,0.5,1024,0.0001,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.5863,1024,0.0,128,0.001,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7905,256,0.2,256,0.0001,3,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.5775,256,0.5,1024,0.01,3,adam,log,"n_flows,n_packets,n_bytes",GRU
@@ -9019,12 +9109,14 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.5689,256,0.0,256,0.01,2,adam,z_score,"n_flows,n_packets,n_bytes",LSTM
 0.5629,1024,0.5,256,0.0001,2,adam,z_score,"n_flows,n_packets,n_bytes",RNN
 0.5639,512,0.2,256,0.01,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",LSTM
+0.3178,1024,0.2,1024,0.001,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7878,512,0.0,1024,0.001,2,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.3122,1024,0.0,512,0.01,2,adam,log,"n_flows,n_packets,n_bytes",RNN
 0.677,512,0.5,128,0.01,3,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.626,512,0.0,256,0.001,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.5012,512,0.5,128,0.01,3,adam,z_score,"n_flows,n_packets,n_bytes",GRU
 0.7817,512,0.0,512,0.0001,1,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
+0.6985,256,0.5,1024,0.0001,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.5862,1024,0.5,512,0.01,3,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.7455,1024,0.2,512,0.0001,1,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.7392,512,0.0,64,0.0001,3,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
@@ -9122,6 +9214,8 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.3122,1024,0.5,128,0.01,2,adam,z_score,"n_flows,n_packets,n_bytes",RNN
 0.6804,512,0.2,1024,0.01,2,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.3122,1024,0.2,1024,0.01,3,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",LSTM
+0.709,1024,0.0,1024,0.0001,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
+0.3122,512,0.0,1024,0.01,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7405,256,0.0,128,0.0001,2,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.6931,1024,0.0,128,0.01,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.5746,256,0.5,1024,0.01,2,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
@@ -9164,6 +9258,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.3122,1024,0.5,128,0.01,3,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.4963,1024,0.2,128,0.01,3,adam,z_score,"n_flows,n_packets,n_bytes",LSTM
 0.7263,512,0.2,128,0.001,2,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
+0.6995,512,0.0,1024,0.0001,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7973,256,0.2,256,0.001,3,adam,z_score,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.7785,1024,0.2,256,0.001,2,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",LSTM
 0.6281,512,0.0,256,0.01,3,adam,log,"n_flows,n_packets,n_bytes",LSTM
@@ -9275,6 +9370,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.7161,256,0.5,128,0.01,1,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.7104,256,0.2,512,0.01,1,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",LSTM
 0.7755,1024,0.2,64,0.0001,3,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
+0.7007,1024,0.0,1024,0.0001,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7806,256,0.2,256,0.0001,1,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.5874,512,0.2,512,0.01,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.6784,1024,0.5,512,0.0001,3,adam,z_score,"n_flows,n_packets,n_bytes",GRU
@@ -9336,6 +9432,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.8264,512,0.5,256,0.001,2,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.7526,256,0.5,1024,0.0001,1,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
 0.7097,256,0.2,256,0.0001,1,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",LSTM
+0.3122,256,0.0,1024,0.01,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7461,1024,0.2,1024,0.01,1,adam,log,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",LSTM
 0.3122,256,0.0,512,0.01,3,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
 0.7712,512,0.2,256,0.001,1,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",GRU
@@ -9379,6 +9476,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.8125,256,0.5,256,0.001,1,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.3126,1024,0.2,128,0.01,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.8181,256,0.2,256,0.0001,3,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
+0.3131,1024,0.5,1024,0.01,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7558,256,0.0,64,0.001,3,adam,log,"n_flows,n_packets,n_bytes",LSTM
 0.5912,1024,0.5,128,0.0001,1,adam,z_score,"n_flows,n_packets,n_bytes",GRU
 0.8139,256,0.0,128,0.0001,3,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
@@ -9508,6 +9606,7 @@ F1_macro,batch_size,dropout,hidden_size,lr,num_layers,opt,preprocessing,selected
 0.7689,512,0.5,256,0.0001,1,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.7115,256,0.2,512,0.0001,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",GRU
 0.3122,512,0.5,64,0.01,3,adam,z_score,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",RNN
+0.3124,1024,0.0,1024,0.01,2,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7028,1024,0.0,512,0.0001,3,adam,z_score,"n_bytes,n_dest_ports,n_dest_ip,dir_ratio_bytes,avg_ttl",RNN
 0.7394,1024,0.0,64,0.01,1,adam,log,"tcp_udp_ratio_bytes,dir_ratio_bytes,avg_duration,avg_ttl",GRU
 0.8309,1024,0.2,128,0.001,3,adam,log,"n_flows,n_packets,n_bytes,n_dest_asn,n_dest_ports,n_dest_ip,tcp_udp_ratio_packets,tcp_udp_ratio_bytes,dir_ratio_packets,dir_ratio_bytes,avg_duration,avg_ttl",LSTM
